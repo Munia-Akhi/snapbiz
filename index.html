@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShowBizness Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #7f14cc);
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(244, 245, 253);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .button {
+  transition-duration: 0.4s;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.button:hover {
+  background-color: #221fbb;
+  color: white;
+}
+  .search {
+    margin-top: 5px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #6046ff;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: #6046ff;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #6046ff;
+  background: #6046ff;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.location img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+.header2 {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header2 h3 {
+            margin: 0;
+        }
+.categories {
+        padding: 20px;
+        display: block;
+        }
+.category-icon {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #000000;
+        margin: 5px;
+    }
+.category-icon img {
+        width: 70%;
+        height: auto;
+    }
+.search-item {
+            background-color: #516ce6;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+.search-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 2px;
+        }
+.search-item .details {
+            flex-grow: 1;
+        }
+.search-item .details h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+.search-item .details p {
+            margin: 5px 0;
+        }
+.search-item .rating {
+            display: flex;
+            align-items: center;
+        }
+.search-item .rating span {
+            margin-left: 5px;
+}
+.footer {
+   position: sticky;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(58, 6, 71);
+   color: white;
+   text-align: center;
+   padding: 1px;
+   margin-left: 0px;
+   margin-right: 5px;
+}
+.checked {
+    color: orange;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="homebtn">
+                <button class="button">ShowBizness</button>
+            </div>
+            <div class="profile">
+                <img src="profile.png">    
+            </div>
+        </div>
+        <div class="main">
+            <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search here">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+            <div class="location">
+            <img src="location.png">
+            </div>
+            </div>
+            <div class="header2">
+                <h3>Categories</h3>
+                <span>See More</span>
+            </div>
+            <div class="categories">
+                <div class="category-icon">
+                    <img src="coffe.png" alt="Coffee Shops">
+                    <p>Coffee</p>
+                </div>
+                <div class="category-icon">
+                    <img src="professional.png" alt="Professionals">
+                    <p>Profes</p>
+                </div>
+                <div class="category-icon">
+                    <img src="car.png" alt="Automotive">
+                    <p>Autom</p>
+                </div>
+                <div class="category-icon">
+                    <img src="cafe.png" alt="Restaurants">
+                    <p>Resta</p>
+                </div>
+                <div class="category-icon">
+                    <img src="travel.png" alt="Travel">
+                    <p>Travel</p>
+                </div>
+                <div class="category-icon">
+                    <img src="home.png" alt="Real Estate">
+                    <p>Estate</p>
+                </div>
+            </div>
+            <div class="recent-search">
+                <h3>Recent Search</h3>
+                <div class="search-item">
+                    <img src="bangla.png" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Bangla Prop LLC</h3>
+                        <p>+1 (525) 456 7948</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="gamma.jpg" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Gamma Biz LLC</h3>
+                        <p>+1 (525) 456 7328</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="bangla.png" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Bangla Prop LLC</h3>
+                        <p>+1 (525) 456 7948</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="gamma.jpg" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Gamma Biz LLC</h3>
+                        <p>+1 (525) 456 7328</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="delta.jpg" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Delta Properties</h3>
+                        <p>+1 (525) 234 7898</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>3.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="bangla.png" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Bangla Prop LLC</h3>
+                        <p>+1 (525) 456 7948</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>4.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-item">
+                    <img src="delta.jpg" alt="Gamma Biz LLC">
+                    <div class="details">
+                        <h3>Delta Properties</h3>
+                        <p>+1 (525) 234 7898</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span>3.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h3>Footer</h3>
+                </div>
+            </div>
+    </div>
+</body>

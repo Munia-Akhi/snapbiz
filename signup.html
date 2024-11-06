@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShowBizness Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #4B0082);
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 100px; /* Adjust as needed */
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin: 15px 0;
+    position: relative;
+  }
+  .form-group input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-signup {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+  }
+  .signin-link {
+    margin-top: 20px;
+    color: #aaa;
+  }
+  .signin-link a {
+    color: #28a745;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">
+    <a href="showbizz.html">
+    <img src="logo.png" alt="ShowBizness Logo">
+  </a>
+  </div>
+  <h1>Sign Up</h1>
+  <div class="form-group">
+    <input type="text" placeholder="Your Name">
+  </div>
+  <div class="form-group">
+    <input type="email" placeholder="Your Email">
+  </div>
+  <div class="form-group">
+    <input type="password" placeholder="Password">
+  </div>
+  <button onclick="window.location.href='showbizzhome.html';" class="btn-signup">Sign Up</button>
+  <div class="">
+    Already have an account? <a href="signin.html">Sign In</a>
+  </div>
+</div>
+</body>
+</html>
